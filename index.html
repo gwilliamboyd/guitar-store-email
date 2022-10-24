@@ -41,17 +41,16 @@ rel="stylesheet">
         font-family: 'Oranienbaum', serif;
         color: #CECECE;
     }
-    .two-columns {
-        text-align: center;
+    .one-column {
+        width: 100%;
+        max-width: 600px;
+        text-align: left;
+        vertical-align: top;
         font-size: 0;
         display: inline-block;
     }
-    .two-columns .column {
+    .guitar-desc {
         width: 100%;
-        max-width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        text-align: left;
     }
 </style>
 </head>
@@ -64,39 +63,59 @@ rel="stylesheet">
                 <td height="12" style="background-color: #2C0101;"></td>
             </tr>
             <!-- HEADER -->
+            <!-- Header master table -->
             <tr>
                 <td>
-                    <table width="100%">
+                    <table>                        
+                        <!-- ROW 1 - LES PAUL - DARK STAIN -->
                         <tr>
-                            <td class="two-columns">
-                                <table class="column">
-                                    <!-- LES PAUL - DARK STAIN -->
-                                    <tr>
-                                        <td style="padding: 0 32px 10px;">
-                                            <img src="images/lespaul-dark-stain.jpg" 
-                                            alt="Gibson Les Paul - Dark Stain" 
-                                            width="120" 
-                                            title="Gibson Les Paul - Dark Stain">
-                                        </td>
-                                        <td>
-                                            <p style="font-size: 14px;">Plug in with one of our fine 
-                                                Gibson electric guitars!</p>
-                                        </td>
-                                    </tr>
-                                    <!-- STRATOCASTER - SEA FOAM GREEN -->
-                                    <tr>
-                                        <td style="padding: 0 32px 10px;">
-                                            <p style="font-size: 14px;">Or check out a guitar from
-                                                our selection of Fender Custom Shop instruments!</p>
-                                        </td>
-                                        <td>
-                                            <img src="images/strat-seafoam-green.jpg" 
-                                            alt="Fender Stratocaster - Seafoam Green"
-                                            width="120"
-                                            title="Fender Stratocaster - Seafoam Green">
-                                        </td>                                        
-                                    </tr>
-                                </table>
+                            <td style="padding: 10px 32px;">
+                                <img src="images/lespaul-dark-stain.jpg" 
+                                alt="Gibson Les Paul - Dark Stain" 
+                                width="120" title="Gibson Les Paul - Dark Stain">
+                            </td>
+                            <td style="padding: 10px 32px;">
+                                <div class="guitar-desc">
+                                    <p style="font-size: 20px;">Plug in with one of our fine 
+                                    <strong>Gibson</strong> electric guitars!</p>
+                            </div>
+                            </td>                                        
+                        </tr>
+                        <!-- ROW 2 - STRATOCASTER - SEA FOAM GREEN -->
+                        <tr>
+                            <td style="padding: 0 32px 10px;font-size: 20px;">
+                                Or check out a guitar from our selection of 
+                                <strong>Fender Custom Shop</strong> instruments!
+                            </td>
+                            <td>
+                                <img src="images/strat-seafoam-green.jpg" 
+                                alt="Fender Stratocaster - Seafoam Green"
+                                width="120" title="Fender Stratocaster - Seafoam Green">
+                            </td>                                        
+                        </tr>
+                        <!-- GUITAR BRANDS -->
+                        <tr>
+                            <td style="padding: 0 10px 0;">
+                                <p style="font-size: 34px;">
+                                    <strong>Or check out a guitar from:                                                    
+                                    </strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- PAUL REED SMITH -->
+                            <td style="padding: 0 10px;">
+                                <img src="images/prs-logo.png" alt="PRS Logo"
+                                width="170" title="Paul Reed Smith Guitars">
+                            </td>
+                            <!-- MARTIN GUITARS -->
+                            <td style="padding: 0 10px;">
+                                <img src="images/martin-logo.png" alt="Martin Logo"
+                                width="170" title="Martin Guitars">
+                            </td>
+                            <!-- EVH GUITARS -->
+                            <td style="padding: 0 10px;">
+                                <img src="images/evh-logo.png" alt="EVH Logo"
+                                width="170" title="EVH Guitars">
                             </td>
                         </tr>
                     </table>
