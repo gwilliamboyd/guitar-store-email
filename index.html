@@ -49,6 +49,22 @@ rel="stylesheet">
         font-size: 0;
         display: inline-block;
     }
+    .three-column {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+        font-size: 0;
+        padding: 0 16px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .three-column .column {
+        width: 100%;
+        max-width: 200px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
 </style>
 </head>
 <body>
@@ -59,82 +75,177 @@ rel="stylesheet">
             <tr>
                 <td height="12" style="background-color: #2C0101;"></td>
             </tr>
-            <!-- HEADER -->
-            <!-- Header master table -->
+            <!-- ELECTRIC GUITARS -->
+            <!-- Each of these need to be in their own separate table. 
+            I should avoid having multiple rows in the same table if I want
+            maximum control over each cell's width. -->
             <tr>
                 <td>
-                    <table>
-                        <!-- GIBSON LES PAUL -->
+                    <table width="100%">
                         <tr>
-                            <td style="padding: 12px 32px;">
-                                <div>
-                                    <img src="images/lespaul-dark-stain.jpg" 
-                                    alt="Gibson Les Paul"
-                                    width="180" title="Gibson Les Paul">
-                                </div>
-                            </td>
-                            <td colspan="2">
-                                <div style="padding: 12px 32px;font-size: 32px;">
-                                    Plug in with one of our fine <strong>Gibson</strong> guitars!
-                                </div>
-                            </td>
-                        </tr>
-                         <!-- FENDER STRATOCASTER -->
-                         <tr>
-                            <td colspan="2">
-                                <div style="padding: 12px 32px;font-size: 32px;">
-                                    Or check out a one-of-a-kind instrument from the 
-                                    <strong>Fender Custom Shop!</strong>
-                                </div>
-                            </td>
-                            <td style="padding: 12px 32px;">
-                                <div>
-                                    <img src="images/strat-seafoam-green.jpg" 
-                                    alt="Fender Stratocaster"
-                                    width="180" title="Fender Stratocaster">
-                                </div>
+                            <td>
+                                <!-- Gibson Les Paul -->
+                                <table width="100%">
+                                    <tr>
+                                        <!-- image -->
+                                        <td style="padding: 12px 32px;">
+                                            <div>
+                                                <img src="images/lespaul-dark-stain.jpg" 
+                                                alt="Gibson Les Paul"
+                                                width="180" title="Gibson Les Paul">
+                                            </div>
+                                        </td>
+                                        <td style="padding: 12px 32px;">
+                                            <div style="font-size: 32px;">
+                                                Plug in and crank it up with one of our fine 
+                                                <strong>Gibson</strong> guitars!
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
-                        
+                         <!-- Fender Stratocaster -->
+                        <tr>                            
+                            <td>
+                                <table width="100%">
+                                    <tr>
+                                        <!-- description -->
+                                        <td>
+                                            <div style="padding: 12px 32px;font-size: 32px;">
+                                                Or check out a one-of-a-kind instrument from the 
+                                                <strong>Fender Custom Shop!</strong>
+                                            </div>
+                                        </td>
+                                        <!-- image -->
+                                        <td style="padding: 12px 32px;">
+                                            <div>
+                                                <img src="images/strat-seafoam-green.jpg" 
+                                                alt="Fender Stratocaster"
+                                                width="180" title="Fender Stratocaster">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>                                
+                            </td>                            
+                        </tr>
+                    </table>
+                    <table width="100%">                        
                         <!-- GUITAR BRANDS -->
                         <tr>
-                            <td colspan="3" style="padding: 10px 32px 24px;text-align: center;">
-                                <div width="100%" style="font-size: 48px;">
+                            <td colspan="3" style="padding: 10px 32px 18px;text-align: center;">
+                                <div style="font-size: 48px;">
                                     <strong>Or check out a guitar from:</strong>
                                 </div>
                             </td>
                         </tr>
-                        <table class="three-column">
-                            <tr>
-                                <!-- PAUL REED SMITH -->
-                                <td style="padding: 15px;">
-                                    <img src="images/prs-logo.png" alt="PRS Logo"
-                                    width="170" title="Paul Reed Smith Guitars">
-                                </td>
-                                <!-- MARTIN GUITARS -->
-                                <td style="padding: 15px;">
-                                    <img src="images/martin-logo.png" alt="Martin Logo"
-                                    width="170" title="Martin Guitars">
-                                </td>
-                                <!-- EVH GUITARS -->
-                                <td style="padding: 15px;">
-                                    <img src="images/evh-logo.png" alt="EVH Logo"
-                                    width="170" title="EVH Guitars">
-                                </td>
-                            </tr>
-                        </table>
+                        <tr>
+                            <td>
+                                <table class="three-column">
+                                    <tr>
+                                        <!-- Paul Reed Smith (PRS) -->
+                                        <td style="padding: 15px;">
+                                            <img src="images/prs-logo.png" alt="PRS Logo"
+                                            width="170" title="Paul Reed Smith Guitars">
+                                        </td>
+                                        <!-- Martin Guitars -->
+                                        <td style="padding: 15px;">
+                                            <img src="images/martin-logo.png" alt="Martin Logo"
+                                            width="170" title="Martin Guitars">
+                                        </td>
+                                        <!-- EVH Guitars -->
+                                        <td style="padding: 15px;">
+                                            <img src="images/evh-logo.png" alt="EVH Logo"
+                                            width="170" title="EVH Guitars">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>                        
                     </table>
                 </td>
             </tr>
             <!-- AMPLIFIERS -->
             <tr>
                 <td>
-                    <table>
+                    <table width="100%">
                         <tr>
-                            <td>
+                            <td style="padding: 0 32px;">
                                 <img src="images/mesa-boogie-fillmore.jpg" 
                                 alt="Mesa Boogie" width="600px"
                                 title="Mesa Boogie">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- EFFECTS PEDALS -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div style="padding: 15px;font-size: 60px;font-weight: bold;text-align: center;">
+                                    Effects Pedals
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="three-column">
+                        <tr>
+                            <td>
+                                <table class="column">
+                                    <tr>
+                                        <td style="padding: 15px;vertical-align: top;">
+                                            <img src="images/strymon-big-sky.jpg" 
+                                            alt="Strymon Big Sky" width="170"
+                                            title="Strymon Big Sky">
+                                        </td>
+                                    </tr>
+                                </table>                                
+                            </td>
+                            <td>
+                                <table class="column">
+                                    <tr>
+                                        <td style="padding: 15px;vertical-align: top;">
+                                            <img src="images/suhr-alexa.jpg" 
+                                            alt="Suhr Alexa" width="170"
+                                            title="Suhr Alexa">
+                                        </td>
+                                    </tr>
+                                </table>                                
+                            </td>
+                            <td>
+                                <table class="column">
+                                    <tr>
+                                        <td style="padding: 15px;vertical-align: top;">
+                                            <img src="images/walrus-luminary.jpg" 
+                                            alt="Walrus Luminary" width="170"
+                                            title="Walrus Luminary">
+                                        </td>
+                                    </tr>
+                                </table>                                
+                            </td>                            
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div style="padding: 10px 32px;vertical-align: top;
+                                font-size: 20px;text-align: left;line-height: 2em;">
+                                We also feature out-of-this-world effects from 
+                                premium brands such as: <br /> <strong>Walrus Audio, 
+                                    Strymon, MXR, BOSS, JHS, Jackson Audio</strong>,
+                                    and more! 
+                            </div>
                             </td>
                         </tr>
                     </table>
