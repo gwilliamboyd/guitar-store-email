@@ -41,16 +41,13 @@ rel="stylesheet">
         font-family: 'Oranienbaum', serif;
         color: #CECECE;
     }
-    .one-column {
+    .two-column {
         width: 100%;
         max-width: 600px;
         text-align: left;
         vertical-align: top;
         font-size: 0;
         display: inline-block;
-    }
-    .guitar-desc {
-        width: 100%;
     }
 </style>
 </head>
@@ -66,58 +63,66 @@ rel="stylesheet">
             <!-- Header master table -->
             <tr>
                 <td>
-                    <table>                        
-                        <!-- ROW 1 - LES PAUL - DARK STAIN -->
+                    <table>
+                        <!-- GIBSON LES PAUL -->
                         <tr>
-                            <td style="padding: 10px 32px;">
-                                <img src="images/lespaul-dark-stain.jpg" 
-                                alt="Gibson Les Paul - Dark Stain" 
-                                width="120" title="Gibson Les Paul - Dark Stain">
+                            <td style="padding: 12px 32px;">
+                                <div>
+                                    <img src="images/lespaul-dark-stain.jpg" 
+                                    alt="Gibson Les Paul"
+                                    width="180" title="Gibson Les Paul">
+                                </div>
                             </td>
-                            <td style="padding: 10px 32px;">
-                                <div class="guitar-desc">
-                                    <p style="font-size: 20px;">Plug in with one of our fine 
-                                    <strong>Gibson</strong> electric guitars!</p>
-                            </div>
-                            </td>                                        
-                        </tr>
-                        <!-- ROW 2 - STRATOCASTER - SEA FOAM GREEN -->
-                        <tr>
-                            <td style="padding: 0 32px 10px;font-size: 20px;">
-                                Or check out a guitar from our selection of 
-                                <strong>Fender Custom Shop</strong> instruments!
+                            <td colspan="2">
+                                <div style="padding: 12px 32px;font-size: 32px;">
+                                    Plug in with one of our fine <strong>Gibson</strong> guitars!
+                                </div>
                             </td>
-                            <td>
-                                <img src="images/strat-seafoam-green.jpg" 
-                                alt="Fender Stratocaster - Seafoam Green"
-                                width="120" title="Fender Stratocaster - Seafoam Green">
-                            </td>                                        
                         </tr>
+                         <!-- FENDER STRATOCASTER -->
+                         <tr>
+                            <td colspan="2">
+                                <div style="padding: 12px 32px;font-size: 32px;">
+                                    Or check out a one-of-a-kind instrument from the 
+                                    <strong>Fender Custom Shop!</strong>
+                                </div>
+                            </td>
+                            <td style="padding: 12px 32px;">
+                                <div>
+                                    <img src="images/strat-seafoam-green.jpg" 
+                                    alt="Fender Stratocaster"
+                                    width="180" title="Fender Stratocaster">
+                                </div>
+                            </td>
+                        </tr>
+                        
                         <!-- GUITAR BRANDS -->
                         <tr>
-                            <td style="padding: 0 10px 0;">
-                                <p style="font-size: 34px;">
-                                    <strong>Or check out a guitar from:                                                    
-                                    </strong></p>
+                            <td colspan="3" style="padding: 10px 32px 24px;text-align: center;">
+                                <div width="100%" style="font-size: 48px;">
+                                    <strong>Or check out a guitar from:</strong>
+                                </div>
                             </td>
                         </tr>
-                        <tr>
-                            <!-- PAUL REED SMITH -->
-                            <td style="padding: 0 10px;">
-                                <img src="images/prs-logo.png" alt="PRS Logo"
-                                width="170" title="Paul Reed Smith Guitars">
-                            </td>
-                            <!-- MARTIN GUITARS -->
-                            <td style="padding: 0 10px;">
-                                <img src="images/martin-logo.png" alt="Martin Logo"
-                                width="170" title="Martin Guitars">
-                            </td>
-                            <!-- EVH GUITARS -->
-                            <td style="padding: 0 10px;">
-                                <img src="images/evh-logo.png" alt="EVH Logo"
-                                width="170" title="EVH Guitars">
-                            </td>
-                        </tr>
+                        <table class="three-column">
+                            <tr>
+                                <!-- PAUL REED SMITH -->
+                                <td style="padding: 15px;">
+                                    <img src="images/prs-logo.png" alt="PRS Logo"
+                                    width="170" title="Paul Reed Smith Guitars">
+                                </td>
+                                <!-- MARTIN GUITARS -->
+                                <td style="padding: 15px;">
+                                    <img src="images/martin-logo.png" alt="Martin Logo"
+                                    width="170" title="Martin Guitars">
+                                </td>
+                                <!-- EVH GUITARS -->
+                                <td style="padding: 15px;">
+                                    <img src="images/evh-logo.png" alt="EVH Logo"
+                                    width="170" title="EVH Guitars">
+                                </td>
+                            </tr>
+                        </table>
                     </table>
                 </td>
             </tr>
