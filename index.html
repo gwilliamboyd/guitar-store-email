@@ -7,11 +7,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modern HTML Email Template</title>
 <!-- FONT LINK -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"
+rel="stylesheet">
 <!-- EMAIL STYLE -->
 <style>
+    body {
+        margin: 0;
+        background-color: #CECECE;
+    }
+    table {
+        border-spacing: 0;
+    }
+    td {
+        padding: 0;
+    }
+    img {
+        border: 0;
+    }
+    .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #757575;
+        padding-bottom: 75px;
+    }
+    .main {
+        background-color: #242424;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: 'Oranienbaum', serif;
+        color: #CECECE;
+    }
+    .two-columns {
+        text-align: center;
+        font-size: 0;
+        display: inline-block;
+    }
+    .two-columns .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
 </style>
 </head>
 <body>
-    
+    <center class="wrapper">
+        <!-- MASTER TABLE -->
+        <table class="main" width="100%">
+            <!-- TOP BAR -->
+            <tr>
+                <td height="12" style="background-color: #2C0101;"></td>
+            </tr>
+            <!-- HEADER -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns">
+                                <table class="column">
+                                    <!-- LES PAUL - DARK STAIN -->
+                                    <tr>
+                                        <td style="padding: 0 32px 10px;">
+                                            <img src="images/lespaul-dark-stain.jpg" 
+                                            alt="Gibson Les Paul - Dark Stain" 
+                                            width="120" 
+                                            title="Gibson Les Paul - Dark Stain">
+                                        </td>
+                                        <td>
+                                            <p style="font-size: 14px;">Plug in with one of our fine 
+                                                Gibson electric guitars!</p>
+                                        </td>
+                                    </tr>
+                                    <!-- STRATOCASTER - SEA FOAM GREEN -->
+                                    <tr>
+                                        <td style="padding: 0 32px 10px;">
+                                            <p style="font-size: 14px;">Or check out a guitar from
+                                                our selection of Fender Custom Shop instruments!</p>
+                                        </td>
+                                        <td>
+                                            <img src="images/strat-seafoam-green.jpg" 
+                                            alt="Fender Stratocaster - Seafoam Green"
+                                            width="120"
+                                            title="Fender Stratocaster - Seafoam Green">
+                                        </td>                                        
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
 </body>
 </html>
