@@ -33,7 +33,7 @@ rel="stylesheet">
         padding-bottom: 50px;
     }
     .main {
-        background-color: #8A8A8A;
+        background-color: #B3B3B3 ;
         margin: 0 auto;
         width: 100%;
         max-width: 600px;
@@ -64,6 +64,20 @@ rel="stylesheet">
         vertical-align: top;
         text-align: center;
     }
+    .button-red {
+        padding: 8px 16px;
+        font-size: 20px;
+        text-align: center;
+        color: #EEEEEE;
+        background-color: #AF1A2F;
+        border: 1px solid #EEEEEE;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 </head>
 <body>
@@ -75,9 +89,19 @@ rel="stylesheet">
                 <td height="12" style="background-color: #AF1A2F;"></td>
             </tr>
             <!-- ELECTRIC GUITARS -->
-            <!-- Each of these need to be in their own separate table. 
-            I should avoid having multiple rows in the same table if I want
-            maximum control over each cell's width. -->
+            <tr>
+                <td style="background-color: #AF1A2F;">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div style="padding: 15px;font-size: 60px;font-weight: bold;text-align: center;">
+                                    GUITARS
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <table width="100%">
@@ -138,7 +162,7 @@ rel="stylesheet">
             </tr>
             <tr>
                 <td height="12" 
-                style="background-color: #8A8A8A;"></td>
+                style="background-color: #B3B3B3;"></td>
             </tr>
             <tr>
                 <td>
@@ -159,7 +183,7 @@ rel="stylesheet">
                 <td>
                     <table width="100%">
                         <tr>
-                            <td>
+                            <td style="background-color: #121212;">
                                 <table class="three-column">
                                     <tr>
                                         <!-- Paul Reed Smith (PRS) -->
@@ -181,6 +205,20 @@ rel="stylesheet">
                                 </table>
                             </td>
                         </tr>                        
+                    </table>
+                </td>
+            </tr>
+            <!-- EFFECTS PEDALS -->
+            <tr>
+                <td style="background-color: #AF1A2F;">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div style="padding: 15px;font-size: 60px;font-weight: bold;text-align: center;">
+                                    Amplifiers
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </td>
             </tr>
@@ -270,6 +308,25 @@ rel="stylesheet">
                                     Strymon, MXR, BOSS, JHS, Jackson Audio</strong>,
                                     and more! 
                             </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #B3B3B3;padding: 0 0 20px;">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div style="padding: 20px 40px;vertical-align: top;
+                                font-size: 30px;font-weight: bold;text-align: center;line-height: 1.5em;color: #AF1A2F;">
+                                    Come find your dream guitar today!
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" style="text-decoration: none;"><span class="button-red">Our website</span></a>
                             </td>
                         </tr>
                     </table>
