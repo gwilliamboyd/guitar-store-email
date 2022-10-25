@@ -99,6 +99,20 @@ rel="stylesheet">
         justify-content: flex-end;
         padding: 20px 32px;
     }
+    #banner-amp {
+        background-image: url('./images/mesa-boogie-fillmore.jpg');
+        background-position: center;
+        background-size: contain;
+        max-width: 600px;
+        height: 327px;
+        text-align: left;
+        font-size: 28px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* .button-red .banner-amp {
+        align-items: center;       
+    } */
 </style>
 </head>
 <body>
@@ -181,7 +195,7 @@ rel="stylesheet">
                                             </div>
                                             <!-- button -->
                                             <div>
-                                                <a href="#" style="text-decoration: none;"><span class="button-red">Check out our Gibsons</span></a>
+                                                <a href="#" class="button-red" style="text-decoration: none;"><span>Check out our Gibsons</span></a>
                                             </div>
                                         </td>
                                     </tr>
@@ -207,7 +221,7 @@ rel="stylesheet">
                                             </div>
                                             <!-- button -->
                                             <div>
-                                                <a href="#" style="text-decoration: none;"><span class="button-red">Check out our Fenders</span></a>
+                                                <a href="#" class="button-red" style="text-decoration: none;"><span>Check out our Fenders</span></a>
                                             </div>
                                         </td>
                                         <!-- image -->
@@ -236,7 +250,7 @@ rel="stylesheet">
                         <tr>
                             <td style="padding: 10px 32px 18px;text-align: center;
                             background-color: #AF1A2F;color: #EEEEEE;">
-                                <div style="font-size: 48px;">
+                                <div style="font-size: 38px;">
                                     <strong>Or check out a guitar from:</strong>
                                 </div>
                             </td>
@@ -293,9 +307,25 @@ rel="stylesheet">
                     <table width="100%">
                         <tr>
                             <td style="height: fit-content;">
-                                <img src="images/mesa-boogie-fillmore.jpg" 
-                                alt="Mesa Boogie" width="600px"
-                                title="Mesa Boogie">
+                                <div id="banner-amp" style="position: relative;">
+                                    <p style="padding: 12px 32px;margin: 40px 16px 16px;font-size: 28px;
+                                    background-color: rgba(195, 195, 195, 0.85);color: #AF1A2F;">
+                                    <strong>Mesa Boogie, Marshall, Fender, PRS, </strong>and more all marked down!</p>
+                                    <a href="#" class="button-red" style="text-decoration: none;
+                                    margin-top: auto;margin-bottom: 20px;
+                                    font-size: 32px;">
+                                        <span>Amps this way!</span>
+                                    </a>
+                                </div>
+                                <!-- button -->
+                                <div>
+                                    
+                                </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               
                             </td>
                         </tr>
                     </table>
@@ -391,7 +421,7 @@ rel="stylesheet">
                         </tr>
                         <tr>
                             <td>
-                                <a href="#" style="text-decoration: none;"><span class="button-red">Our website</span></a>
+                                <a href="#" class="button-red" style="text-decoration: none;"><span>Our website</span></a>
                             </td>
                         </tr>
                     </table>
