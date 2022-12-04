@@ -5,14 +5,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modern HTML Email Template</title>
+<title>GuitHub Email Template</title>
 <!-- FONT LINK -->
-<!-- Oranienbaum -->
+<!-- Oranienbaum - serif - not currently being used -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"
 rel="stylesheet">
-<!-- Kumbh Sans -->
+<!-- Kumbh Sans - sans-serif -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:
@@ -28,7 +28,6 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     body {
         background-color: #CECECE;
         font-family: 'Kumbh Sans', sans-serif;
-        width: 100%;
     }
     table {
         border-spacing: 0;
@@ -37,41 +36,97 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     td {
         padding: 0;
     }
+    a {
+        display: inline-block;
+    }
     img {
         border: 0;
     }
     .wrapper {        
         table-layout: fixed;
-        background-color: #020202;
+        background-color: #323232;
+        width: 100%;
         padding-bottom: 60px;
     }
     .main {
-        background-color: #121212;        
-        max-width: 600px;
-        display: inline-block;
-        vertical-align: top;
+        background-color: #121212;
+        width: 600px;
         text-align: center;        
         color: #EEEEEE;
+        margin: 0 auto;
     }
+    .padding-bar {
+        height: 12px; 
+        background-color: #AF1A2F;
+    }
+    .heading {
+        background-color: #AF1A2F;
+        padding: 15px;
+        font-size: 54px;
+        font-weight: bold;
+    }
+    #check-out-brands {
+        font-size: 38px;
+    }
+    #cta {
+        font-size: 36px;
+        padding: 20px 40px;
+    }
+    /* nav-bar, guitar ad: */
     .two-column {
         text-align: left;        
         font-size: 0;        
     }
+    .two-column .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        max-width: 300px;
+    }
+    /* selects logo in header */
+    .two-column .column a img {
+        max-width: 200px;
+    }
+    #social-icons a img {
+        text-align: right;
+    }
+    #social-icons a img {
+        max-width: 35px;
+    }
+    .guitar-img {
+        width: 220px;
+    }
+    .guitar-column {
+        padding: 40px;
+    }
+    .guitar-descr {
+        background-color: #AF1A2F;
+        padding: 12px 32px;
+        font-size: 32px;
+        line-height: 1.5em;
+    }
+    #guitar-button {
+        font-size: 16px;
+    }
     .three-column {        
         font-size: 0;
     }
-    .three-column .column {        
-        max-width: 200px;        
+    .three-column .column {
+        width: 100%;        
+        max-width: 200px;
+        display: inline-block;
+        vertical-align: top;        
     }
     .button-red, .button-gray {
         padding: 8px 16px;
         font-size: 20px;
-        font-weight: bold;        
+        font-weight: bold;
+        line-height: normal;        
         color: #EEEEEE;
         background-color: #AF1A2F;
         border: 0;
         border-radius: 5px;
-        width: fit-content;
         text-decoration: none;
         margin: 0 auto;
     }
@@ -80,9 +135,6 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         color: #AF1A2F;
         background-color: #EEEEEE;
         border: 1px solid #AF1A2F;
-    }
-    #social-icons {
-        padding: 20px 32px;
     }
     #banner-amp {
         background-image: url('https://i.ibb.co/YQpCLw0/mesa-boogie-fillmore.jpg');
@@ -107,51 +159,43 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <table class="main">
             <!-- TOP BAR -->
             <tr>
-                <td height="12" style="background-color: #AF1A2F;"></td>
+                <td class="padding-bar"></td>
             </tr>
+            <!-- NAV BAR -->
             <tr>
                 <td style="background-color: #C3C3C3;">
-                    <table>
+                    <table width="100%">
                         <tr>
-                            <td>
+                            <td class="two-column">
                                 <table class="column">
                                     <tr>
-                                        <td style="padding: 20px 32px;">
-                                            <a href="#"><img src="https://i.ibb.co/br27sjB/guithub-logo-kumbh.png" alt="GuitHub Home Page"
-                                                width="200px" title="GuitHub Home Page"></a>
+                                        <td>
+                                            <a href="#"><img src="https://i.ibb.co/br27sjB/guithub-logo-kumbh.png" alt="GuitHub Home Page" width="200" title="GuitHub Home Page"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column" id="social-icons">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.ibb.co/0mYyGR2/facebook-icon-red.png" alt="GuitHub Facebook Page" title="Visit our Facebook page!"></a>
+                                            <a href="#"><img src="https://i.ibb.co/3vPFGbt/instagram-icon-red.png" alt="GuitHub Instagram Page" title="Take a peek at our Instagram!"></a>
+                                            <a href="#"><img src="https://i.ibb.co/jDpyyht/youtube-icon-red.png" alt="GuitHub YouTube Channel" title="Check out our YouTube Channel!"></a>
+                                            <a href="#"><img src="https://i.ibb.co/VqP2zdX/reverb-icon-red.png" alt="GuitHub Reverb Store" title="Shop our used gear on Reverb!"></a>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
-                            <td>
-                                <table id="social-icons" class="column">
-                                    <tr>
-                                        <td style="padding: 20px 0 32px;">
-                                            <a href="#"><img src="https://i.ibb.co/0mYyGR2/facebook-icon-red.png" alt="GuitHub Facebook Page"
-                                                width="35" title="Visit our Facebook page!"></a>
-                                            <a href="#"><img src="https://i.ibb.co/3vPFGbt/instagram-icon-red.png" alt="GuitHub Instagram Page"
-                                                width="35" title="Take a peek at our Instagram!"></a>
-                                            <a href="#"><img src="https://i.ibb.co/jDpyyht/youtube-icon-red.png" alt="GuitHub YouTube Channel"
-                                                width="35" title="Check out our YouTube Channel!"></a>
-                                            <a href="#"><img src="https://i.ibb.co/VqP2zdX/reverb-icon-red.png" alt="GuitHub Reverb Store"
-                                                width="35" title="Shop our used gear on Reverb!"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>                            
                         </tr>
-                    </table>
+                    </table>                    
                 </td>
             </tr>
             <!-- ELECTRIC GUITARS -->
             <tr>
-                <td style="background-color: #AF1A2F;">
+                <td>
                     <table>
                         <tr>
-                            <td>
-                                <div style="padding: 15px;font-size: 54px;font-weight: bold;">
-                                    GUITARS
-                                </div>
+                            <td class="heading">
+                                GUITARS
                             </td>
                         </tr>
                     </table>
@@ -161,28 +205,25 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
                 <td>
                     <table>
                         <tr>
-                            <td>
+                            <td class="two-column">
                                 <!-- Gibson Les Paul -->
-                                <table>
+                                <table class="column guitar-column">
                                     <tr>
                                         <!-- image -->
-                                        <td style="max-width: 300px;">
-                                            <div style="padding: 40px;" >
-                                                <img src="https://i.ibb.co/NmT7NxS/lespaul-dark-stain.jpg" 
-                                                alt="Gibson Les Paul"
-                                                width="220" title="Gibson Les Paul">
-                                            </div>
+                                        <td>
+                                            <img src="https://i.ibb.co/NmT7NxS/lespaul-dark-stain.jpg" class="guitar-img" 
+                                                alt="Gibson Les Paul" title="Gibson Les Paul">
                                         </td>
+                                    </tr>
+                                </table>
+                                <table class="column guitar-descr">
+                                    <tr>
                                         <!-- description -->
-                                        <td style="max-width: 300px;background-color: #AF1A2F;">
-                                            <div style="padding: 12px 32px;font-size: 32px;line-height: 1.5em;">
-                                                Plug in and crank it up with one of our fine 
-                                                <strong>Gibson</strong> guitars!
-                                            </div>
+                                        <td>
+                                            Plug in and crank it up with one of our fine 
+                                            <strong>Gibson</strong> guitars!
                                             <!-- button -->
-                                            <div style="margin-top: 32px;">
-                                                <a href="#" class="button-gray"><span>Check Out Our Gibsons</span></a>
-                                            </div>
+                                            <a href="#" class="button-gray guitar-button"><span>Check Out Our Gibsons</span></a>
                                         </td>
                                     </tr>
                                 </table>
@@ -194,29 +235,26 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
             <!-- Fender Stratocaster -->
             <tr>
                 <td>
-                    <table>
+                    <table class="two-column">
                         <tr>                            
                             <td>
-                                <table>
+                                <table class="column guitar-descr">
                                     <tr>
                                         <!-- description -->
-                                        <td style="max-width: 300px;background-color: #AF1A2F;">
-                                            <div style="padding: 12px 32px;font-size: 32px;line-height: 1.5em;">
-                                                Or check out a one-of-a-kind guitar from the 
-                                                <strong>Fender Custom Shop!</strong>
-                                            </div>
+                                        <td>
+                                            Or check out a one-of-a-kind guitar from the 
+                                            <strong>Fender Custom Shop!</strong>
                                             <!-- button -->
-                                            <div style="margin-top: 32px;">
-                                                <a href="#" class="button-gray"><span>Shop Our Fenders</span></a>
-                                            </div>
+                                            <a href="#" class="button-gray guitar-button"><span>Shop Our Fenders</span></a>
                                         </td>
+                                    </tr>
+                                </table>
+                                <table class="column guitar-column">
+                                    <tr>
                                         <!-- image -->
-                                        <td style="max-width: 300px;">
-                                            <div style="padding: 40px">
-                                                <img src="https://i.ibb.co/LtPM6xg/strat-seafoam-green.jpg" 
-                                                alt="Fender Stratocaster"
-                                                width="220" title="Fender Stratocaster">
-                                            </div>
+                                        <td>
+                                            <img src="https://i.ibb.co/LtPM6xg/strat-seafoam-green.jpg" class="guitar-img"
+                                            alt="Fender Stratocaster" title="Fender Stratocaster">
                                         </td>
                                     </tr>
                                 </table>                                
@@ -225,42 +263,44 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
                     </table>
                 </td>
             </tr>
-            <!-- <tr>
-                <td height="12" 
-                style="background-color: #C3C3C3;"></td>
-            </tr> -->
             <tr>
                 <td>
                     <table>                        
                         <!-- GUITAR BRANDS -->
                         <tr>
-                            <td style="padding: 10px 32px 18px;
-                            background-color: #AF1A2F;color: #EEEEEE;">
-                                <div style="font-size: 38px;">
-                                    <strong>Or check out a guitar from:</strong>
-                                </div>
+                            <td class="heading" id="check-out-brands">
+                                Or check out a guitar from:
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
+            <!-- Guitar brand logos -->
             <tr>
                 <td>
-                    <table>
+                    <table width="100%">
                         <tr>
-                            <td style="background-color: #121212;">
-                                <table class="three-column">
+                            <td class="three-column">
+                                <table class="column">
                                     <tr>
                                         <!-- Paul Reed Smith (PRS) -->
                                         <td style="padding: 15px;">
                                             <a href="#"><img src="https://i.ibb.co/k3Py9FS/prs-logo.png" alt="PRS Logo"
                                             width="170" title="Paul Reed Smith Guitars"></a>
                                         </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
                                         <!-- Martin Guitars -->
                                         <td style="padding: 15px;">
                                             <a href="#"><img src="https://i.ibb.co/NFDygwW/martin-logo.png" alt="Martin Logo"
                                             width="170" title="Martin Guitars"></a>
                                         </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
                                         <!-- EVH Guitars -->
                                         <td style="padding: 15px;">
                                             <a href="#"><img src="https://i.ibb.co/jHmkkgf/evh-logo.png" alt="EVH Logo"
@@ -275,27 +315,23 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
             </tr>
             <!-- AMPLIFIERS -->
             <tr>
-                <td style="background-color: #AF1A2F;">
+                <td>
                     <table>
                         <tr>
-                            <td>
-                                <div style="padding: 15px;font-size: 54px;font-weight: bold;">
-                                    Amplifiers
-                                </div>
+                            <td class="heading">
+                                Amplifiers
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>            
             <tr>
-                <td style="background-color: #AF1A2F;">
+                <td>
                     <div id="banner-amp" style="position: relative;">
                         <table>
                             <tr>
-                                <td style="height: fit-content;">                                    
-                                    <p style="padding: 12px 32px;margin:0;font-size: 28px;
-                                    background-color: rgba(195, 195, 195, 0.85);color: #AF1A2F;
-                                    margin-top: 10px;">
+                                <td style="padding: 12px 32px;font-size: 28px;
+                                    background-color: rgba(195, 195, 195, 0.85);color: #AF1A2F;">
                                     <strong>Mesa Boogie, Marshall, Fender, PRS, </strong>
                                     and more all marked down!</p>
                                 </td>
@@ -313,13 +349,11 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
             </tr>
             <!-- EFFECTS PEDALS -->
             <tr>
-                <td style="background-color: #AF1A2F;">
+                <td>
                     <table>
                         <tr>
-                            <td>
-                                <div style="padding: 15px;font-size: 54px;font-weight: bold;">
-                                    Effects Pedals
-                                </div>
+                            <td class="heading">
+                                Effects Pedals
                             </td>
                         </tr>
                     </table>
@@ -375,18 +409,15 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
                     <!-- Effects pedals text -->
                     <table>
                         <tr>
-                            <td style="background-color: #C3C3C3;">
-                                <div style="padding: 10px 32px;
+                            <td style="background-color: #C3C3C3;padding: 10px 32px;
                                 font-size: 28px;text-align: left;line-height: 2em;color: #AF1A2F;">
                                 We also feature top-notch effects from 
                                 premium brands such as: <br /> <strong>Walrus Audio, 
-                                    Strymon, MXR, BOSS, JHS, Jackson Audio</strong>,
-                                    and more!
-                                <a href="#" class="button-red" style="
-                                padding: 6px 16px;">
+                                Strymon, MXR, BOSS, JHS, Jackson Audio</strong>,
+                                and more!
+                                <a href="#" class="button-red">
                                     <span>Shop Our Effects Pedals</span>
-                                </a> 
-                            </div>
+                                </a>
                             </td>
                         </tr>
                     </table>
@@ -397,11 +428,8 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
                 <td style="background-color: #AF1A2F;padding: 0 0 20px;">
                     <table>
                         <tr>
-                            <td>
-                                <div style="padding: 20px 40px;
-                                font-size: 36px;font-weight: bold;line-height: 1.5em;color: #EEEEEE;">
-                                    Find your dream guitar today!
-                                </div>
+                            <td class="heading" id="cta">
+                                Find your dream guitar today!
                             </td>
                         </tr>
                         <tr>
