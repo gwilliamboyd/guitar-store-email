@@ -95,12 +95,8 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     .two-column .column a img {
         /* max-width: 180px; */
         text-align: center;
-    }    
-    /* #social-icons {        
-        text-align: center;
-    } */
+    }
     #social-icons a img {
-        /* text-align: center; */
         max-width: 35px;
     }
     .guitar-img {
@@ -129,7 +125,8 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         width: 100%;        
         max-width: 200px;
         display: inline-block;
-        vertical-align: top;        
+        vertical-align: top;
+        text-align: center;        
     }
     .button-red, .button-gray {
         padding: 8px 16px;
@@ -162,11 +159,6 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         border: 1px solid #AF1A2F;
     }
     #banner-amp {
-        /* background-image: url('https://i.ibb.co/YQpCLw0/mesa-boogie-fillmore.jpg');
-        background-position: center;
-        background-size: contain; 
-        height: 327px;
-        text-align: left;*/
         font-size: 28px;        
     }
 
@@ -174,12 +166,15 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         max-width: 600px;
         width: 100%;
     }
-    /* replace with 3 column table setup:  */
     .footer {
         background-color: #C3C3C3;
         color: #AF1A2F;
         font-size: 12px;
-        padding: 8px 16px;
+        width: 100%;
+        /* padding: 8px 16px; */
+    }
+    .footer .column {
+        width: 100%;
     }
 </style>
 </head>
@@ -384,9 +379,9 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
             <!-- PEDALS PICTURES -->
             <tr>
                 <td>
-                    <table class="three-column">
+                    <table>
                         <tr>
-                            <td>
+                            <td class="three-column">
                                 <!-- Strymon -->
                                 <table class="column">
                                     <tr>
@@ -429,10 +424,9 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
                         <tr>
                             <td style="background-color: #C3C3C3;padding: 10px 32px;
                                 font-size: min(5vw, 30px);text-align: left;line-height: 2em;color: #AF1A2F;">
-                                We also feature top-notch effects from 
-                                premium brands such as: <br /> <strong>Walrus Audio, 
-                                Strymon, MXR, BOSS, JHS, Jackson Audio</strong>,
-                                and more! <br>
+                                Top-notch FX from premium brands: <br /> <strong><span style="font-size: 36px;">Walrus Audio, 
+                                Strymon, MXR, BOSS, JHS, Jackson Audio</span></strong><br>
+                                And more! <br>
                                 <a href="#" class="button-red">
                                     <span>Shop Our Effects Pedals</span>
                                 </a>
@@ -466,27 +460,19 @@ wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
                 <td>
                     <table>
                         <tr>
-                            <td class="three-column footer">
-                                <table class="column" width="100%" style="table-layout: fixed;">
+                            <td class="footer" style="display: table-cell">
+                                <table class="column">
                                     <tr>
                                         <td>
-                                            1234 Rockin' Road
-                                            Cleveland, Ohio 44114
+                                            1234 Rockin' Road<br> 
+                                            Cleveland, OH 44114
                                         </td>
-                                    </tr>
-                                </table>
-                                <table class="column" width="100%" style="table-layout: fixed;">
-                                    <tr>
-                                        <td>
-                                            Email us: inquiries@guithub.com
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column" width="100%" style="table-layout: fixed;">
-                                    <tr>
-                                        <td>
-                                            Copyright GuitHub Inc. 2022
-                                        </td>
+                                    <td>
+                                        inquiries@guithub.com
+                                    </td>
+                                    <td>
+                                        Copyright<br>GuitHub Inc. 2022
+                                    </td>
                                     </tr>
                                 </table>
                             </td>                            
