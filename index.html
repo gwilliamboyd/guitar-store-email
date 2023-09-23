@@ -1,474 +1,591 @@
-<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/
-    TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/ TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GuitHub Email Template</title>
-<!-- FONT LINK -->
-<!-- Oranienbaum - serif - not currently being used -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"
-rel="stylesheet">
-<!-- Kumbh Sans - sans-serif -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:
-wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<!-- EMAIL STYLE -->
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        border-collapse: collapse;  
-    }
-    body {
-        background-color: #CECECE;
-        font-family: 'Kumbh Sans', sans-serif;
-    }
-    table {
-        border-spacing: 0;
-        width: 100%;
-    }
-    td {
-        padding: 0;
-    }
-    a {
-        display: inline-block;
-    }
-    img {
-        border: 0;
-    }
-    .wrapper {        
-        table-layout: fixed;
-        background-color: #323232;
-        width: 100%;
-        padding-bottom: 60px;
-    }
-    .main {
-        background-color: #121212;
-        max-width: 600px;
-        width: 100%;
-        text-align: center;        
-        color: #EEEEEE;
-        margin: 0 auto;
-    }
-    .padding-bar {
-        height: 12px; 
-        background-color: #AF1A2F;
-    }
-    .heading {
-        background-color: #AF1A2F;
-        padding: 15px;
-        font-size: min(9vmin, 54px);
-        font-weight: bold;
-    }
-    #check-out-brands {
-        font-size: min(9vw, 34px);
-    }
-    #cta {
-        font-size: min(6vw, 36px);
-        padding: 20px 40px;
-    }
-    /* nav-bar, guitar ad: */
-    .two-column {
-        box-sizing: border-box;       
-        font-size: 0;
-        text-align: center; 
-        display: inline-block;
-        width: 100%;
-        max-width: 600px;
-        table-layout: fixed;       
-    }
-    .two-column .column {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        text-align: center;
-    }
-    /* selects logo in header */
-    .two-column .column a img {
-        /* max-width: 180px; */
-        text-align: center;
-    }
-    #social-icons a img {
-        max-width: 35px;
-    }
-    .guitar-img {
-        width: 260px;
-    }
-    .guitar-column, .guitar-descr {
-        padding: 20px;
-        height: 431.22px;
-        
-    }
-    .guitar-descr {        
-        background-color: #AF1A2F;
-        /* padding: 6.67vmin; */
-        /* old padding value:
+	<head>
+		<meta
+			http-equiv="Content-Type"
+			content="text/html; charset=utf-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>GuitHub Email Template</title>
+		<!-- FONT LINK -->
+		<!-- Oranienbaum - serif - not currently being used -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"
+			rel="stylesheet" />
+		<!-- Kumbh Sans - sans-serif -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:
+wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+		<!-- EMAIL STYLE -->
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				border-collapse: collapse;
+			}
+			body {
+				background-color: #cecece;
+				font-family: 'Kumbh Sans', sans-serif;
+			}
+			table {
+				border-spacing: 0;
+				width: 100%;
+			}
+			td {
+				padding: 0;
+			}
+			a {
+				display: inline-block;
+			}
+			img {
+				border: 0;
+			}
+			.wrapper {
+				table-layout: fixed;
+				background-color: #323232;
+				width: 100%;
+				padding-bottom: 60px;
+			}
+			.main {
+				background-color: #121212;
+				max-width: 600px;
+				width: 100%;
+				text-align: center;
+				color: #eeeeee;
+				margin: 0 auto;
+			}
+			.padding-bar {
+				height: 12px;
+				background-color: #af1a2f;
+			}
+			.heading {
+				background-color: #af1a2f;
+				padding: 15px;
+				font-size: min(9vmin, 54px);
+				font-weight: bold;
+			}
+			#check-out-brands {
+				font-size: min(9vw, 34px);
+			}
+			#cta {
+				font-size: min(6vw, 36px);
+				padding: 20px 40px;
+			}
+			/* nav-bar, guitar ad: */
+			.two-column {
+				box-sizing: border-box;
+				font-size: 0;
+				text-align: center;
+				display: inline-block;
+				width: 100%;
+				max-width: 600px;
+				table-layout: fixed;
+			}
+			.two-column .column {
+				box-sizing: border-box;
+				width: 100%;
+				max-width: 300px;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+			}
+			/* selects logo in header */
+			.two-column .column a img {
+				/* max-width: 180px; */
+				text-align: center;
+			}
+			#social-icons a img {
+				max-width: 35px;
+			}
+			.guitar-img {
+				width: 260px;
+			}
+			.guitar-column,
+			.guitar-descr {
+				padding: 20px;
+				height: 431.22px;
+			}
+			.guitar-descr {
+				background-color: #af1a2f;
+				/* padding: 6.67vmin; */
+				/* old padding value:
         padding: 12px 32px; */
-        font-size: 35px;
-        line-height: 1.5em;
-    }
-    #guitar-button {
-        font-size: 16px;
-    }
-    .three-column {        
-        font-size: 0;
-    }
-    .three-column .column {
-        width: 100%;        
-        max-width: 200px;
-        display: inline-block;
-        vertical-align: top;
-        text-align: center;        
-    }
-    .button-red, .button-gray {
-        padding: 8px 16px;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: normal;        
-        color: #EEEEEE;
-        background-color: #AF1A2F;
-        border: 0;
-        border-radius: 5px;
-        text-decoration: none;
-        margin: 0 auto;
-    }
-    /* styles for only the gray button */
-    .button-gray {
-        color: #AF1A2F;
-        background-color: #EEEEEE;
-        border: 1px solid #AF1A2F;
-    }
-    #banner-amp {
-        font-size: 28px;        
-    }
+				font-size: 35px;
+				line-height: 1.5em;
+			}
+			#guitar-button {
+				font-size: 16px;
+			}
+			.three-column {
+				font-size: 0;
+			}
+			.three-column .column {
+				width: 100%;
+				max-width: 200px;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+			}
+			.button-red,
+			.button-gray {
+				padding: 8px 16px;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: normal;
+				color: #eeeeee;
+				background-color: #af1a2f;
+				border: 0;
+				border-radius: 5px;
+				text-decoration: none;
+				margin: 0 auto;
+			}
+			/* styles for only the gray button */
+			.button-gray {
+				color: #af1a2f;
+				background-color: #eeeeee;
+				border: 1px solid #af1a2f;
+			}
+			#banner-amp {
+				font-size: 28px;
+			}
 
-    #banner-amp img {
-        max-width: 600px;
-        width: 100%;
-    }
-    .footer {
-        background-color: #C3C3C3;
-        color: #AF1A2F;
-        font-size: 12px;
-        width: 100%;
-        /* padding: 8px 16px; */
-    }
-    .footer .column {
-        width: 100%;
-    }
-</style>
-</head>
-<body>
-    <center class="wrapper">
-        <!-- MASTER TABLE -->
-        <table class="main" width="100%">
-            <!-- TOP BAR -->
-            <tr>
-                <td class="padding-bar"></td>
-            </tr>
-            <!-- NAV BAR -->
-            <tr>
-                <td style="background-color: #C3C3C3;">
-                    <table width="100%">
-                        <tr>
-                            <td style="display: inline-block;text-align: center;width: 100%;font-size: 0;">
-                                <table width="100%" style="max-width: 300px;display: inline-block;">
-                                    <tr>
-                                        <td style="padding: 12px 60px;">
-                                            <a href="#"><img src="https://i.ibb.co/br27sjB/guithub-logo-kumbh.png" alt="GuitHub Home Page" title="GuitHub Home Page" width="180"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table width="100%" style="max-width: 300px;display: inline-block;">
-                                    <tr>
-                                        <td style="padding: 12px 80px;">
-                                            <a href="#"><img src="https://i.ibb.co/0mYyGR2/facebook-icon-red.png" width="35" alt="GuitHub Facebook Page" title="Visit our Facebook page!"></a>
-                                            <a href="#"><img src="https://i.ibb.co/3vPFGbt/instagram-icon-red.png" width="35" alt="GuitHub Instagram Page" title="Take a peek at our Instagram!"></a>
-                                            <a href="#"><img src="https://i.ibb.co/jDpyyht/youtube-icon-red.png" width="35" alt="GuitHub YouTube Channel" title="Check out our YouTube Channel!"></a>
-                                            <a href="#"><img src="https://i.ibb.co/VqP2zdX/reverb-icon-red.png" width="35" alt="GuitHub Reverb Store" title="Shop our used gear on Reverb!"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>                    
-                </td>
-            </tr>           
-            <!-- ELECTRIC GUITARS -->
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="heading">
-                                GUITARS
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <td class="two-column">
-                                <!-- Gibson Les Paul -->
-                                <table class="column guitar-column">
-                                    <tr>
-                                        <!-- image -->
-                                        <td>
-                                            <img src="https://i.ibb.co/NmT7NxS/lespaul-dark-stain.jpg" class="guitar-img" 
-                                                alt="Gibson Les Paul" title="Gibson Les Paul">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column guitar-descr" width="100%">
-                                    <tr>
-                                        <!-- description -->
-                                        <td>
-                                            Plug in and crank it up with one of our fine 
-                                            <strong>Gibson</strong> guitars!
-                                            <!-- button -->
-                                            <a href="#" class="button-gray guitar-button" style="margin-top: 40%;"><span>Check Out Our Gibsons</span></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- Fender Stratocaster -->
-            <tr>
-                <td>
-                    <table class="two-column">
-                        <tr>                            
-                            <td>
-                                <table class="column guitar-descr">
-                                    <tr>
-                                        <!-- description -->
-                                        <td>
-                                            Or check out a one-of-a-kind guitar from the 
-                                            <strong>Fender Custom Shop!</strong>
-                                            <!-- button -->
-                                            <a href="#" class="button-gray guitar-button" style="margin-top: 20%;"><span>Shop Our Fenders</span></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column guitar-column">
-                                    <tr>
-                                        <!-- image -->
-                                        <td>
-                                            <img src="https://i.ibb.co/LtPM6xg/strat-seafoam-green.jpg" class="guitar-img"
-                                            alt="Fender Stratocaster" title="Fender Stratocaster">
-                                        </td>
-                                    </tr>
-                                </table>                                
-                            </td>                            
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table>                        
-                        <!-- GUITAR BRANDS -->
-                        <tr>
-                            <td class="heading" id="check-out-brands">
-                                Or check out a guitar from:
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- Guitar brand logos -->
-            <tr>
-                <td>
-                    <table width="100%">
-                        <tr>
-                            <td class="three-column">
-                                <table class="column">
-                                    <tr>
-                                        <!-- Paul Reed Smith (PRS) -->
-                                        <td style="padding: 15px;">
-                                            <a href="#"><img src="https://i.ibb.co/k3Py9FS/prs-logo.png" alt="PRS Logo"
-                                            width="170" title="Paul Reed Smith Guitars"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column">
-                                    <tr>
-                                        <!-- Martin Guitars -->
-                                        <td style="padding: 15px;">
-                                            <a href="#"><img src="https://i.ibb.co/NFDygwW/martin-logo.png" alt="Martin Logo"
-                                            width="170" title="Martin Guitars"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table class="column">
-                                    <tr>
-                                        <!-- EVH Guitars -->
-                                        <td style="padding: 15px;">
-                                            <a href="#"><img src="https://i.ibb.co/jHmkkgf/evh-logo.png" alt="EVH Logo"
-                                            width="170" title="EVH Guitars"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>                        
-                    </table>
-                </td>
-            </tr>
-            <!-- AMPLIFIERS -->
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="heading">
-                                Amplifiers
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table id="banner-amp">
-                        <tr>
-                            <td style="position: relative;">
-                                <img src="https://i.ibb.co/yP6Ck14/amp-banner.jpg" id="amp-banner" alt="Mesa, Marshall, Orange and more all marked down!">
-                                <a href="#" class="button-red" style="font-size: 26px;margin-bottom: 0.6rem;">
-                                    <span>Amps This Way</span>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-             <!-- EFFECTS PEDALS -->
-             <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="heading">
-                                Effects Pedals
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- PEDALS PICTURES -->
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="three-column">
-                                <!-- Strymon -->
-                                <table class="column">
-                                    <tr>
-                                        <td style="padding: 15px;">
-                                            <img src="https://i.ibb.co/G5ffGZB/strymon-big-sky.jpg" 
-                                            alt="Strymon Big Sky" width="170"
-                                            title="Strymon Big Sky">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- Suhr -->
-                                <table class="column">
-                                    <tr>
-                                        <td style="padding: 15px;">
-                                            <img src="https://i.ibb.co/6bXxzmj/suhr-alexa.jpg" 
-                                            alt="Suhr Alexa" width="170"
-                                            title="Suhr Alexa">
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- Walrus -->
-                                <table class="column">
-                                    <tr>
-                                        <td style="padding: 15px;">
-                                            <img src="https://i.ibb.co/3YLbnbF/walrus-luminary.jpg" 
-                                            alt="Walrus Luminary" width="170"
-                                            title="Walrus Luminary">
-                                        </td>
-                                    </tr>
-                                </table>                                
-                            </td>                            
-                        </tr>
-                    </table>
-                </td>
-            </tr>            
-            <!-- Effects pedals text -->
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td style="background-color: #C3C3C3;padding: 10px 32px;
-                                font-size: min(5vw, 30px);line-height: 2em;color: #AF1A2F;">
-                                Top-notch FX from premium brands: <br /> <strong><span style="font-size: 36px;">Walrus Audio, 
-                                Strymon, MXR, BOSS, JHS, Jackson Audio</span></strong><br>
-                                And more! <br>
-                                <a href="#" class="button-red">
-                                    <span>Shop Our Effects Pedals</span>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- CALL TO ACTION -->
-            <tr>
-                <td style="background-color: #AF1A2F;padding: 0 0 20px;">
-                    <table>
-                        <tr>
-                            <td class="heading" id="cta">
-                                Find your dream guitar today!
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="#" class="button-gray" style="
-                                font-size: 26px;margin-top: 12px;">
-                                <span>Our Website</span>
-                            </a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- FOOTER -->
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td class="footer" style="display: table-cell">
-                                <table class="column">
-                                    <tr>
-                                        <td>
-                                            1234 Rockin' Road<br> 
-                                            Cleveland, OH 44114
-                                        </td>
-                                    <td>
-                                        inquiries@guithub.com
-                                    </td>
-                                    <td>
-                                        Copyright<br>GuitHub Inc. 2022
-                                    </td>
-                                    </tr>
-                                </table>
-                            </td>                            
-                        </tr>
-                    </table>
-                </td>
-            </tr>                          
-        </table>
-    </center>
-</body>
+			#banner-amp img {
+				max-width: 600px;
+				width: 100%;
+			}
+			.footer {
+				background-color: #c3c3c3;
+				color: #af1a2f;
+				font-size: 12px;
+				width: 100%;
+				/* padding: 8px 16px; */
+			}
+			.footer .column {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<center class="wrapper">
+			<!-- MASTER TABLE -->
+			<table
+				class="main"
+				width="100%">
+				<!-- TOP BAR -->
+				<tr>
+					<td class="padding-bar"></td>
+				</tr>
+				<!-- NAV BAR -->
+				<tr>
+					<td style="background-color: #c3c3c3">
+						<table width="100%">
+							<tr>
+								<td
+									style="
+										display: inline-block;
+										text-align: center;
+										width: 100%;
+										font-size: 0;
+									">
+									<table
+										width="100%"
+										style="max-width: 300px; display: inline-block">
+										<tr>
+											<td style="padding: 12px 60px">
+												<a href="#"
+													><img
+														src="https://i.ibb.co/6wBdVCZ/guithub-logo-kumbh-min.png"
+														alt="GuitHub Home Page"
+														title="GuitHub Home Page"
+														width="180"
+												/></a>
+											</td>
+										</tr>
+									</table>
+									<table
+										width="100%"
+										style="max-width: 300px; display: inline-block">
+										<tr>
+											<td style="padding: 12px 80px">
+												<a href="#"
+													><img
+														src="https://i.ibb.co/jyBCYs5/facebook-icon-red-min.png"
+														width="35"
+														alt="GuitHub Facebook Page"
+														title="Visit our Facebook page!"
+												/></a>
+												<a href="#"
+													><img
+														src="https://i.ibb.co/47NyvkX/instagram-icon-red-min.png"
+														width="35"
+														alt="GuitHub Instagram Page"
+														title="Take a peek at our Instagram!"
+												/></a>
+												<a href="#"
+													><img
+														src="https://i.ibb.co/YkSfgC9/youtube-icon-red-min.png"
+														width="35"
+														alt="GuitHub YouTube Channel"
+														title="Check out our YouTube Channel!"
+												/></a>
+												<a href="#"
+													><img
+														src="https://i.ibb.co/xS4sgcz/reverb-icon-red-min.png"
+														width="35"
+														alt="GuitHub Reverb Store"
+														title="Shop our used gear on Reverb!"
+												/></a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- ELECTRIC GUITARS -->
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td class="heading">GUITARS</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table width="100%">
+							<tr>
+								<td class="two-column">
+									<!-- Gibson Les Paul -->
+									<table class="column guitar-column">
+										<tr>
+											<!-- image -->
+											<td>
+												<img
+													src="https://i.ibb.co/dB9ZRqT/lespaul-dark-stain-min.jpg"
+													class="guitar-img"
+													alt="Gibson Les Paul"
+													title="Gibson Les Paul" />
+											</td>
+										</tr>
+									</table>
+									<table
+										class="column guitar-descr"
+										width="100%">
+										<tr>
+											<!-- description -->
+											<td>
+												Plug in and crank it up with one of our fine
+												<strong>Gibson</strong> guitars!
+												<!-- button -->
+												<a
+													href="#"
+													class="button-gray guitar-button"
+													style="margin-top: 40%"
+													><span>Check Out Our Gibsons</span></a
+												>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- Fender Stratocaster -->
+				<tr>
+					<td>
+						<table class="two-column">
+							<tr>
+								<td>
+									<table class="column guitar-descr">
+										<tr>
+											<!-- description -->
+											<td>
+												Or check out a one-of-a-kind guitar from the
+												<strong>Fender Custom Shop!</strong>
+												<!-- button -->
+												<a
+													href="#"
+													class="button-gray guitar-button"
+													style="margin-top: 20%"
+													><span>Shop Our Fenders</span></a
+												>
+											</td>
+										</tr>
+									</table>
+									<table class="column guitar-column">
+										<tr>
+											<!-- image -->
+											<td>
+												<img
+													src="https://i.ibb.co/F66d5fv/strat-seafoam-green-min.jpg"
+													class="guitar-img"
+													alt="Fender Stratocaster"
+													title="Fender Stratocaster" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table>
+							<!-- GUITAR BRANDS -->
+							<tr>
+								<td
+									class="heading"
+									id="check-out-brands">
+									Or check out a guitar from:
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- Guitar brand logos -->
+				<tr>
+					<td>
+						<table width="100%">
+							<tr>
+								<td class="three-column">
+									<table class="column">
+										<tr>
+											<!-- Paul Reed Smith (PRS) -->
+											<td style="padding: 15px">
+												<a href="#"
+													><img
+														src="https://i.ibb.co/k3Py9FS/prs-logo.png"
+														alt="PRS Logo"
+														width="170"
+														title="Paul Reed Smith Guitars"
+												/></a>
+											</td>
+										</tr>
+									</table>
+									<table class="column">
+										<tr>
+											<!-- Martin Guitars -->
+											<td style="padding: 15px">
+												<a href="#"
+													><img
+														src="https://i.ibb.co/QMdjhgP/martin-logo-min.png"
+														alt="Martin Logo"
+														width="170"
+														title="Martin Guitars"
+												/></a>
+											</td>
+										</tr>
+									</table>
+									<table class="column">
+										<tr>
+											<!-- EVH Guitars -->
+											<td style="padding: 15px">
+												<a href="#"
+													><img
+														src="https://i.ibb.co/gRgmN1s/evh-logo-min.png"
+														alt="EVH Logo"
+														width="170"
+														title="EVH Guitars"
+												/></a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- AMPLIFIERS -->
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td class="heading">Amplifiers</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table id="banner-amp">
+							<tr>
+								<td style="position: relative">
+									<img
+										src="https://i.ibb.co/xY69Xpj/amp-banner-min.jpg"
+										id="amp-banner"
+										alt="Mesa, Marshall, Orange and more all marked down!" />
+									<a
+										href="#"
+										class="button-red"
+										style="font-size: 26px; margin-bottom: 0.6rem">
+										<span>Amps This Way</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- EFFECTS PEDALS -->
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td class="heading">Effects Pedals</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- PEDALS PICTURES -->
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td class="three-column">
+									<!-- Strymon -->
+									<table class="column">
+										<tr>
+											<td style="padding: 15px">
+												<img
+													src="https://i.ibb.co/d2zPdMW/strymon-big-sky-min.jpg"
+													alt="Strymon Big Sky"
+													width="170"
+													title="Strymon Big Sky" />
+											</td>
+										</tr>
+									</table>
+									<!-- Suhr -->
+									<table class="column">
+										<tr>
+											<td style="padding: 15px">
+												<img
+													src="https://i.ibb.co/FhNQgS1/suhr-alexa-min.jpg"
+													alt="Suhr Alexa"
+													width="170"
+													title="Suhr Alexa" />
+											</td>
+										</tr>
+									</table>
+									<!-- Walrus -->
+									<table class="column">
+										<tr>
+											<td style="padding: 15px">
+												<img
+													src="https://i.ibb.co/SRc5ckL/walrus-luminary-min.jpg"
+													alt="Walrus Luminary"
+													width="170"
+													title="Walrus Luminary" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- Effects pedals text -->
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td
+									style="
+										background-color: #c3c3c3;
+										padding: 10px 32px;
+										font-size: min(5vw, 30px);
+										line-height: 2em;
+										color: #af1a2f;
+									">
+									Top-notch FX from premium brands: <br />
+									<strong
+										><span style="font-size: 36px"
+											>Walrus Audio, Strymon, MXR, BOSS, JHS, Jackson
+											Audio</span
+										></strong
+									><br />
+									And more! <br />
+									<a
+										href="#"
+										class="button-red">
+										<span>Shop Our Effects Pedals</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- CALL TO ACTION -->
+				<tr>
+					<td style="background-color: #af1a2f; padding: 0 0 20px">
+						<table>
+							<tr>
+								<td
+									class="heading"
+									id="cta">
+									Find your dream guitar today!
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a
+										href="#"
+										class="button-gray"
+										style="font-size: 26px; margin-top: 12px">
+										<span>Our Website</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- FOOTER -->
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td
+									class="footer"
+									style="display: table-cell">
+									<table class="column">
+										<tr>
+											<td>
+												1234 Rockin' Road<br />
+												Cleveland, OH 44114
+											</td>
+											<td>inquiries@guithub.com</td>
+											<td>Copyright<br />GuitHub Inc. 2022</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
 </html>
